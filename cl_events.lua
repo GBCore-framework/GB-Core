@@ -19,3 +19,4 @@ GB.Functions.GetKey = function(key)
     }
     return Keys[key]
 end
+
