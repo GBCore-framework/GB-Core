@@ -1,4 +1,4 @@
-fx_vesrion = 'cerulean'
+fx_version 'cerulean'
 games { 'gta5' }
 
 author 'JulianRadix <london.fivem@atticl.com>'
@@ -7,10 +7,10 @@ version '1.0.0'
 
 -- dependency 'N/A'
 
-client_scripts{
-    'core/cl_core.lua',
+client_scripts {
+    'core/cl_core.lua'
 }
 
-server_scripts{
-    'core/sv_core.lua',
+server_scripts {
+    'core/sv_core.lua'
 }
