@@ -1,3 +1,6 @@
+GB = {}
+GB.Core = {}
+
 function GB.Core.Start(self)
     Citizen.CreateThread(function()
         while true do
@@ -6,13 +9,15 @@ function GB.Core.Start(self)
                 TriggerServerEvent('GB-Core:ServerStart')
                 break
             end
+            Wait(0)
         end
     end)
 end
+
 GB.Core.Start(self)
 
 RegisterNetEvent('GB-Core:client:getObject')
 AddEventHandler('GB-Core:client:getObject', function(callback)
     callback(GB)
-    print('Called Back ' .. GB .. )
+    print('Called Back', GB)
 end)
